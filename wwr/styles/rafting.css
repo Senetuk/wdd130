@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #E5ECE9; /* This is a muted, greyish color with a slight brown undertone. */
+  --secondary-color: #D6D1CD; /* This color is a warm, beige-like shade with a slight grey undertone. */
+  --accent1-color: #969A97; /* This is a pale, creamy white color with a slight green undertone. */
+  --accent2-color: #C60F78; /* This is a deep, rich magenta color with a strong pink undertone. */
+  --heading-font: "Open Sans";
+  --body-font: "Montserrat";
+}
+header {
+    /* background-color: var(--secondary-color); */
+    color: var(--accent2-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}/*This CSS selector header, main, footer { targets three different HTML elements simultaneously by using a comma to specify each of these child elements of the document body*/
+h1, h2, p {
+    font-family: var(--heading-font);
+    color: black;
+}
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}/*Styles some basic, consistent margin and padding declarations for the nav, paragraph, section, and article elements*/
+.headNav {
+    background-image: url(../images/wwr-image5.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    padding-top: 40px;
+}
+.navCon {
+    width: 73%;
+}
+.navTit {
+    padding: 5px;
+    background-color: #0000006b;
+    text-align: center;
+}
+.navTit h1 {
+    color: white;
+}
+.socialmedia a {
+    text-decoration: none;
+}/*Removes the underlines from the social media image links in the footer.*/
+.secNacCon {
+    background-color: #2a70b591;
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: center;    
+}
+.secNacCon p {
+    color: white;
+}
