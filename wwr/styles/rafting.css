@@ -7,7 +7,7 @@
   --body-font: "Montserrat";
 }
 header {
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
     color: var(--accent2-color);
 }
 * {
@@ -15,51 +15,53 @@ header {
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 header, main, footer {
-    width: 840px;
+    width: 840;
     margin: 0 auto;
-}/*This CSS selector header, main, footer { targets three different HTML elements simultaneously by using a comma to specify each of these child elements of the document body*/
-h1, h2, p {
+}
+h1, h2 {
     font-family: var(--heading-font);
-    color: black;
+    color: var(--primary-color);
 }
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-}/*Styles some basic, consistent margin and padding declarations for the nav, paragraph, section, and article elements*/
-.headNav {
-    background-image: url(../images/wwr-image5.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 350px;
-    padding-top: 40px;
-}
-.navCon {
-    width: 73%;
-}
-.navTit {
-    padding: 5px;
-    background-color: #0000006b;
-    text-align: center;
-}
-.navTit h1 {
-    color: white;
 }
 .socialmedia a {
     text-decoration: none;
-}/*Removes the underlines from the social media image links in the footer.*/
-.secNacCon {
-    background-color: #2a70b591;
-    display: flex;
-    padding: 10px;
-    margin-top: 20px;
-    align-items: center;    
 }
-.secNacCon p {
-    color: white;
+.hero{
+    position: relative;
 }
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: black;
+}
+.hero article img {
+    float: right;
+    width: 125px;
+}
+section img {
+  width: 400px; /* adjust the width as needed */
+  height: 300px; /* adjust the height as needed */
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+
