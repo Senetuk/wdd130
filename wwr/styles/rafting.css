@@ -63,5 +63,54 @@ section img {
   object-fit: cover;
   margin: 10px 0;
 }
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding: 10px;
+}
+
+header img {
+  width: 100px; /* adjust the logo size */
+  height: auto;
+  margin: 10px;
+}
+
+header nav {
+  justify-self: end;
+  margin: 10px;
+}
+
+header nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #000; /* adjust the link color */
+}
+
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.adventure-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.socialmedia {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.2s ease-in-out;
+}
+
 
 
